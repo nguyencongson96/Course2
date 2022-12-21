@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  width: 90%;
+  margin: 3% auto;
+}
+
+.youtube-item {
+  width: calc(95% / 6);
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.youtube-item:hover .youtube-image > img {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+  box-shadow: 0 0 7px white;
+  z-index: 2;
+}
+
+.youtube-image img {
+  width: 100%;
+  aspect-ratio: 18/10;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.youtube-footer {
+  display: flex;
+  gap: 0 10px;
+  margin-top: 10px;
+}
+
+.youtube-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.youtube-title {
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  line-height: 1rem;
+  max-height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Play", sans-serif;
+  margin-bottom: 3px;
+}
+.youtube-author,
+.youtube-viewcount {
+  font-size: 14px;
+  margin: 0;
+}
